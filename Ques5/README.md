@@ -1,5 +1,5 @@
 
-####Question 5
+#### Question 5
 ```
 Input Array Size : N
 Number of Processors : P
@@ -8,7 +8,7 @@ Constraint : N >> P
 
 ---
 
-> ####Normal Bubble Sort Algorithm
+> #### Normal Bubble Sort Algorithm
 
 ```
 BubbleSort (A)
@@ -18,7 +18,7 @@ for j = N to i +1 do
      If A[j] < A[j-1] then
          Exchange A[j] ↔ A[j-1]
 ```
-#####Explanation : 
+##### Explanation : 
 - The above algorithm simply means that 
 
 	1. start from the first element of the array. 
@@ -26,7 +26,7 @@ for j = N to i +1 do
 	3. If the present element is greater than the element to right : SWAP them.
 	4. When no swapping is required : elements are sorted.
 ___
-> ####Parallel Bubble Sort Algorithm
+> #### Parallel Bubble Sort Algorithm
 
 Bubble Sort has various parallel varients such as :
 
@@ -51,7 +51,7 @@ begin
 END
 ```
 
-#####Explanation:
+##### Explanation:
 - The idea is processors are grouped int odd/even and even/odd pairs.
 - Odd/even Phase : The odd processes P compare and exchange their elements with the even processors P+1.
 - Even/Odd Phase : The even processes compare and exchange their elements with the odd processors P+1.
